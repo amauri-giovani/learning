@@ -1,0 +1,110 @@
+>>> python -mzeep http://hom-gws.voegol.com.br/GWS/SessionCreateRQService.svc\?wsdl                                                  10:24  07/06/21    0.80G 
+
+Prefixes:
+     xsd: http://www.w3.org/2001/XMLSchema
+     ns0: http://schemas.sabre.com/ClientServices/SessionCreateRQ/SessionCreateRQService/Imports
+     ns1: http://www.opentravel.org/OTA/2002/11
+     ns2: http://schemas.xmlsoap.org/ws/2002/12/secext
+     ns3: http://www.ebxml.org/namespaces/messageHeader
+     ns4: http://www.w3.org/XML/1998/namespace
+     ns5: http://schemas.gol.com/WebServices/Common/Failure
+     ns6: http://schemas.microsoft.com/2003/10/Serialization/
+
+Global elements:
+     ns5:BackendBusinessRuleFailure(ns5:BackendBusinessRuleFailure)
+     ns5:BackendInfrastructureFailure(ns5:BackendInfrastructureFailure)
+     ns5:BaseFailure(ns5:BaseFailure)
+     ns5:BusinessRuleFailure(ns5:BusinessRuleFailure)
+     ns5:ConsumersMisbehaviourFailure(ns5:ConsumersMisbehaviourFailure)
+     ns5:UnexpectedFailure(ns5:UnexpectedFailure)
+     ns6:QName(xsd:QName)
+     ns6:anyType(None)
+     ns6:anyURI(xsd:anyURI)
+     ns6:base64Binary(xsd:base64Binary)
+     ns6:boolean(xsd:boolean)
+     ns6:byte(xsd:byte)
+     ns6:char(ns6:char)
+     ns6:dateTime(xsd:dateTime)
+     ns6:decimal(xsd:decimal)
+     ns6:double(xsd:double)
+     ns6:duration(ns6:duration)
+     ns6:float(xsd:float)
+     ns6:guid(ns6:guid)
+     ns6:int(xsd:int)
+     ns6:long(xsd:long)
+     ns6:short(xsd:short)
+     ns6:string(xsd:string)
+     ns6:unsignedByte(xsd:unsignedByte)
+     ns6:unsignedInt(xsd:unsignedInt)
+     ns6:unsignedLong(xsd:unsignedLong)
+     ns6:unsignedShort(xsd:unsignedShort)
+     ns2:Security(UsernameToken: {Username: xsd:string, Password: xsd:string, NewPassword: xsd:string[], Organization: xsd:string, Domain: xsd:string}, SabreAth: xsd:string, BinarySecurityToken: xsd:string)
+     ns3:MessageHeader(From: {PartyId: {xsd:string, type: xsd:string}[], Role: xsd:string}, To: {PartyId: {xsd:string, type: xsd:string}[], Role: xsd:string}, CPAId: xsd:string, ConversationId: xsd:string, Service: {xsd:string, type: xsd:string}, Action: xsd:string, MessageData: {MessageId: xsd:string, Timestamp: xsd:string, RefToMessageId: xsd:string, TimeToLive: xsd:dateTime, Timeout: xsd:nonNegativeInteger}, DuplicateElimination: xsd:anyType, Description: {xsd:string, lang: }[], _value_1: ANY[], id: xsd:ID, version: xsd:string, _attr_1: {})
+     ns1:SessionCreateRQ(POS: {Source: {PseudoCityCode: xsd:string}}, returnContextID: xsd:boolean)
+     ns1:SessionCreateRS(Success: {}, Warnings: {Warning: {Language: xsd:string, ShortText: xsd:string, Type: xsd:string, Code: xsd:string, DocURL: xsd:anyURI, Status: xsd:string, Tag: xsd:string, RecordId: xsd:string}}, ConversationId: xsd:string, Errors: {Error: {ErrorInfo: {Message: xsd:string}, ErrorCode: xsd:string, Severity: xsd:string, ErrorMessage: xsd:string}}, EchoToken: xsd:string, TimeStamp: xsd:string, Target: ns1:Target, version: xsd:string, SequenceNmbr: xsd:nonNegativeInteger, PrimaryLangID: xsd:language, AltLangID: xsd:language, status: xsd:string)
+
+
+Global types:
+     xsd:anyType
+     ns5:BackendBusinessRuleFailure(ErrorMessage: xsd:string)
+     ns5:BackendInfrastructureFailure(ErrorMessage: xsd:string)
+     ns5:BaseFailure(ErrorMessage: xsd:string)
+     ns5:BusinessRuleFailure(ErrorMessage: xsd:string)
+     ns5:ConsumersMisbehaviourFailure(ErrorMessage: xsd:string)
+     ns5:UnexpectedFailure(ErrorMessage: xsd:string)
+     ns6:char
+     ns6:duration
+     ns6:guid
+     xsd:ENTITIES
+     xsd:ENTITY
+     xsd:ID
+     xsd:IDREF
+     xsd:IDREFS
+     xsd:NCName
+     xsd:NMTOKEN
+     xsd:NMTOKENS
+     xsd:NOTATION
+     xsd:Name
+     xsd:QName
+     xsd:anySimpleType
+     xsd:anyURI
+     xsd:base64Binary
+     xsd:boolean
+     xsd:byte
+     xsd:date
+     xsd:dateTime
+     xsd:decimal
+     xsd:double
+     xsd:duration
+     xsd:float
+     xsd:gDay
+     xsd:gMonth
+     xsd:gMonthDay
+     xsd:gYear
+     xsd:gYearMonth
+     xsd:hexBinary
+     xsd:int
+     xsd:integer
+     xsd:language
+     xsd:long
+     xsd:negativeInteger
+     xsd:nonNegativeInteger
+     xsd:nonPositiveInteger
+     xsd:normalizedString
+     xsd:positiveInteger
+     xsd:short
+     xsd:string
+     xsd:time
+     xsd:token
+     xsd:unsignedByte
+     xsd:unsignedInt
+     xsd:unsignedLong
+     xsd:unsignedShort
+
+Bindings:
+     Soap11Binding: {http://schemas.sabre.com/ClientServices/SessionCreateRQ/SessionCreateRQService}BasicHttpBinding_ISessionCreateRQService
+
+Service: SessionCreateRQService
+     Port: BasicHttpBinding_ISessionCreateRQService (Soap11Binding: {http://schemas.sabre.com/ClientServices/SessionCreateRQ/SessionCreateRQService}BasicHttpBinding_ISessionCreateRQService)
+         Operations:
+            SessionCreateRQ(POS: {Source: {PseudoCityCode: xsd:string}}, returnContextID: xsd:boolean, _soapheaders={Security: ns2:Security, MessageHeader: ns3:MessageHeader}) -> header: {Security: ns2:Security, MessageHeader: ns3:MessageHeader}, body: {Success: {}, Warnings: {Warning: {Language: xsd:string, ShortText: xsd:string, Type: xsd:string, Code: xsd:string, DocURL: xsd:anyURI, Status: xsd:string, Tag: xsd:string, RecordId: xsd:string}}, ConversationId: xsd:string, Errors: {Error: {ErrorInfo: {Message: xsd:string}, ErrorCode: xsd:string, Severity: xsd:string, ErrorMessage: xsd:string}}, EchoToken: xsd:string, TimeStamp: xsd:string, Target: ns1:Target, version: xsd:string, SequenceNmbr: xsd:nonNegativeInteger, PrimaryLangID: xsd:language, AltLangID: xsd:language, status: xsd:string}

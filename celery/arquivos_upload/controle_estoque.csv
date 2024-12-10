@@ -1,0 +1,3 @@
+id,descricao,genero,categoria,subcategoria,tamanho,cor,min_pecas,alerta_min,limite_alerta_min,total_pecas,preco_compra,preco_venda,motivo_alteracao_preco,auto_pedido,ean,sku,fornecedor,criado_por,criado_em,atualizado_por,atualizado_em
+1,Calça,masculino,1,1,44,Jeans,5,8,1,12,50,70,,0,7894243992792,MCALJEA44,1,1,2021-03-12 06:10:21,,2021-03-12 06:10:21
+2,Camisa Polo,masculino,2,2,G,Azul,12,20,1,28,20,35,,0,7896537853846,MCAMPOL0G,1,1,2021-03-12 20:32:05,,2021-03-12 20:32:05

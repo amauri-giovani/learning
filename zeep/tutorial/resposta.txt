@@ -1,0 +1,75 @@
+╰ python -mzeep http://www.dataaccess.com/webservicesserver/numberconversion.wso\?WSDL                                             10:24  07/06/21    0.81G 
+
+Prefixes:
+     xsd: http://www.w3.org/2001/XMLSchema
+     ns0: http://www.dataaccess.com/webservicesserver/
+
+Global elements:
+     ns0:NumberToDollars(dNum: xsd:decimal)
+     ns0:NumberToDollarsResponse(NumberToDollarsResult: xsd:string)
+     ns0:NumberToWords(ubiNum: xsd:unsignedLong)
+     ns0:NumberToWordsResponse(NumberToWordsResult: xsd:string)
+
+
+Global types:
+     xsd:anyType
+     xsd:ENTITIES
+     xsd:ENTITY
+     xsd:ID
+     xsd:IDREF
+     xsd:IDREFS
+     xsd:NCName
+     xsd:NMTOKEN
+     xsd:NMTOKENS
+     xsd:NOTATION
+     xsd:Name
+     xsd:QName
+     xsd:anySimpleType
+     xsd:anyURI
+     xsd:base64Binary
+     xsd:boolean
+     xsd:byte
+     xsd:date
+     xsd:dateTime
+     xsd:decimal
+     xsd:double
+     xsd:duration
+     xsd:float
+     xsd:gDay
+     xsd:gMonth
+     xsd:gMonthDay
+     xsd:gYear
+     xsd:gYearMonth
+     xsd:hexBinary
+     xsd:int
+     xsd:integer
+     xsd:language
+     xsd:long
+     xsd:negativeInteger
+     xsd:nonNegativeInteger
+     xsd:nonPositiveInteger
+     xsd:normalizedString
+     xsd:positiveInteger
+     xsd:short
+     xsd:string
+     xsd:time
+     xsd:token
+     xsd:unsignedByte
+     xsd:unsignedInt
+     xsd:unsignedLong
+     xsd:unsignedShort
+
+Bindings:
+     Soap11Binding: {http://www.dataaccess.com/webservicesserver/}NumberConversionSoapBinding
+     Soap12Binding: {http://www.dataaccess.com/webservicesserver/}NumberConversionSoapBinding12
+
+Service: NumberConversion
+     Port: NumberConversionSoap (Soap11Binding: {http://www.dataaccess.com/webservicesserver/}NumberConversionSoapBinding)
+         Operations:
+            NumberToDollars(dNum: xsd:decimal) -> NumberToDollarsResult: xsd:string
+            NumberToWords(ubiNum: xsd:unsignedLong) -> NumberToWordsResult: xsd:string
+
+     Port: NumberConversionSoap12 (Soap12Binding: {http://www.dataaccess.com/webservicesserver/}NumberConversionSoapBinding12)
+         Operations:
+            NumberToDollars(dNum: xsd:decimal) -> NumberToDollarsResult: xsd:string
+            NumberToWords(ubiNum: xsd:unsignedLong) -> NumberToWordsResult: xsd:string

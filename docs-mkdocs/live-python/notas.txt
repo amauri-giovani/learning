@@ -1,0 +1,74 @@
+Instalação
+==========
+- Instalar:
+    pip install mkdocs
+
+Criando um novo projeto
+=======================
+    Criando uma nova pasta com o nome do seu projeto
+        mkdocs new <nome_do_projeto>
+    Criando a estrutura de pastas dentro da pasta atual
+        mkdocs new .
+
+Subindo o servidor
+==================
+    - Com a porta padrão 8000:
+        mkdocs serve
+    - Com outra porta:
+        mkdocs serve -a IP:PORTA
+        Exemplo: mkdocs serve -a localhost:8001
+
+Alterando nome principal no servidor
+====================================
+    Em mkdocs.yml:
+        site_name: Live de Python
+
+
+Outros temas
+============
+- Tema Bootswatch
+    http://mkdocs.github.io/mkdocs-bootswatch/
+    pip install mkdocs-bootswatch
+
+- Temas feitos pela comunidade
+    github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+
+- Tema Material
+    https://squidfunk.github.io/mkdocs-material/
+    pip install mkdocs-material
+
+- Alterando o tema:
+    Após a instalação de um tema
+        Em mkdocs.yml:
+            theme: readthedocs
+
+- Criando seu próprio tema:
+    https://github.com/mkdocs/mkdocs-basic-theme
+
+- Alterando css:
+    Crie uma pasta css com arquivo extra_css.css (padrão mas pode ser qualquer outro nome)
+    Acrescente em mkdocs.yml:
+        extra_css:
+            - css/extra_css.css
+
+- Inserindo imagens
+    Crie uma pasta img em docs e coloque o arquivo da imagem
+    No local onde deverá aparecer a imagem:
+    ![<nome_qualquer>](<caminho_da_imagem>)
+    Exemplo: ![Logo Python](/img/python.jpg)
+
+
+- Criando arquivo .gitignore
+    Nesse site é possível gerar o arquivo automaticamente de acordo com as ferramentas utilizadas no projeto:
+    https://www.toptal.com/developers/gitignore
+
+- Adicionando a documentação no Github:
+    Esse comando já fará o deploy para Github Pages e criará uma branch gh-pages
+    mkdocs gh-deploy
+
+- Deploy
+    mkdocs build
+    Será criada uma pasta site com toda a estrutura para o deploy
+
+- Link do vídeo de explicação para a criação da documentação:
+    https://www.youtube.com/watch?v=rX8MRsN1N-U

@@ -1,0 +1,11 @@
+Clonar a API com submodule:
+git submodule add https://github.com/KubeDev/api-conversao.git
+
+Criar a imagem através do Dockerfile:
+docker build -t node_aula:api-conversao .
+
+Criar o container:
+docker run -d -p 8080:8080 node_aula:api-conversao
+
+Acessar a api:
+http://localhost:8080/api-docs/

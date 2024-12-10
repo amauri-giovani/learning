@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sala de Aula</title>
+</head>
+<body>
+<p><b>Lista de Professores</b></p>
+<div id="professores">
+  {% for item in professores %}
+    <li>ID: {{ item['id'] }}, Nome: {{ item['nome'] }}</li>
+  {% endfor %}
+</div>
+</body>
+</html>

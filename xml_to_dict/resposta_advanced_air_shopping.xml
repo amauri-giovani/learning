@@ -1,0 +1,68 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://webservices.sabre.com/sabreXML/2011/10">
+   <soapenv:Header>
+      <sec:Security>
+         <sec:BinarySecurityToken>${#SecurityToken}</sec:BinarySecurityToken>
+      </sec:Security>
+      <mes:MessageHeader>
+         <mes:From>
+            <mes:PartyId>WebServiceClient</mes:PartyId>
+         </mes:From>
+         <mes:To>
+            <mes:PartyId>WebServiceSupplier</mes:PartyId>
+         </mes:To>
+         <mes:CPAId>G3</mes:CPAId>
+         <mes:ConversationId>ECOMPONENT</mes:ConversationId>
+         <mes:Service>AdvancedAirShoppingRQ</mes:Service>
+         <mes:Action>AdvancedAirShoppingRQ</mes:Action>
+         <mes:MessageData>
+            <mes:MessageId>teste@ecomponent.com</mes:MessageId>
+            <mes:Timestamp>2020-05-13T20:42:06-</mes:Timestamp>
+         </mes:MessageData>
+      </mes:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <OTA_AirLowFareSearchRQ Target="Production" Version="5.4.0" ResponseType="OTA" ResponseVersion="5.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <POS>
+            <Source AccountingCode="BD" DefaultTicketingCarrier="G3" OfficeCode="0304470" PersonalCityCode="SAO" PseudoCityCode="SAO">
+               <RequestorID Type="1" ID="1">
+                  <CompanyName Code="SSW"/>
+               </RequestorID>
+            </Source>
+         </POS>
+         <OriginDestinationInformation RPH="1">
+            <DepartureDateTime>${#BeginDate}</DepartureDateTime>
+            <OriginLocation LocationCode="${#DepartureStation}"/>
+            <DestinationLocation LocationCode="${#ArrivalStation}"/>
+            <TPA_Extensions>
+               <DateFlexibility NbrOfDays="0"/>
+               <SegmentType Code="O"/>
+               <!--<IncludeVendorPref Code="G3"/>-->
+            </TPA_Extensions>
+         </OriginDestinationInformation>
+         <TravelPreferences AllFlightsData="true" MaxStopsQuantity="3">
+            <TPA_Extensions>
+               <NumTrips Number="200"/>
+            </TPA_Extensions>
+         </TravelPreferences>
+         <TravelerInfoSummary>
+            <SeatsRequested>1</SeatsRequested>
+            <AirTravelerAvail>
+               <PassengerTypeQuantity Code="ADT" Quantity="1"/>
+            </AirTravelerAvail>
+            <PriceRequestInformation CurrencyCode="BRL">
+               <TPA_Extensions>
+                  <PrivateFare Ind="true"/>
+               </TPA_Extensions>
+            </PriceRequestInformation>
+         </TravelerInfoSummary>
+         <TPA_Extensions>
+            <IntelliSellTransaction Debug="0">
+               <RequestType Name="ADVBRD"/>
+               <!--RequestType Name="CALDATES"/-->
+               <ServiceTag Name="G3"/>
+            </IntelliSellTransaction>
+            <SplitTaxes ByLeg="true" ByFareComponent="true"/>
+         </TPA_Extensions>
+      </OTA_AirLowFareSearchRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 29176717,
+      "callback_query": {
+        "id": "861562994853212701",
+        "from": {
+          "id": 200598266,
+          "is_bot": false,
+          "first_name": "Amauri",
+          "last_name": "Rossetti Giovani",
+          "username": "agiovani",
+          "language_code": "pt-br"
+        },
+        "message": {
+          "message_id": 222,
+          "from": {
+            "id": 1737660201,
+            "is_bot": true,
+            "first_name": "iot_ac4",
+            "username": "iot_ac4_2021_bot"
+          },
+          "chat": {
+            "id": 200598266,
+            "first_name": "Amauri",
+            "last_name": "Rossetti Giovani",
+            "username": "agiovani",
+            "type": "private"
+          },
+          "date": 1619237036,
+          "text": "Em que posso ajudar Amauri?\nEscolha uma das opções com teclado",
+          "reply_markup": {
+            "inline_keyboard": [
+              [
+                {
+                  "text": "Consumo do Processador",
+                  "callback_data": "proc"
+                }
+              ],
+              [
+                {
+                  "text": "Data e Hora Atual",
+                  "callback_data": "data"
+                }
+              ]
+            ]
+          }
+        },
+        "chat_instance": "-4680564695958059465",
+        "data": "proc"
+      }
+    }
+  ]
+}

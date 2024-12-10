@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sec="http://schemas.xmlsoap.org/ws/2002/12/secext" xmlns:mes="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns="http://www.opentravel.org/OTA/2002/11">
+  <soapenv:Header>
+    <sec:Security>
+      <sec:UsernameToken>
+        <sec:Username>0470</sec:Username>
+        <sec:Password>GOLGOL21</sec:Password>
+        <Organization>AAP</Organization>
+        <Domain>G3</Domain>
+      </sec:UsernameToken>
+    </sec:Security>
+    <mes:MessageHeader mes:id="1" mes:version="1.0">
+      <mes:From>
+        <mes:PartyId />
+      </mes:From>
+      <mes:To>
+        <mes:PartyId />
+      </mes:To>
+      <mes:CPAId>G3</mes:CPAId>
+      <mes:ConversationId>ECOMPONENT</mes:ConversationId>
+      <mes:Service>SessionCreateRQ</mes:Service>
+      <mes:Action>SessionCreateRQ</mes:Action>
+      <mes:MessageData>
+        <mes:MessageId>teste@e-component.com</mes:MessageId>
+        <mes:Timestamp>2020-01-01T00:00:00Z</mes:Timestamp>
+      </mes:MessageData>
+    </mes:MessageHeader>
+    <To soapenv:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://etest.e-component.local/GWSSeparado/SessionCreateRQService.svc</To>
+    <Action soapenv:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://schemas.sabre.com/ClientServices/SessionCreateRQ/SessionCreateRQService/ISessionCreateRQService/SessionCreateRQ</Action>
+  </soapenv:Header>
+  <soapenv:Body>
+    <ns:SessionCreateRQ>
+      <ns:POS>
+        <ns:Source PseudoCityCode="HDQ" />
+      </ns:POS>
+    </ns:SessionCreateRQ>
+  </soapenv:Body>
+</soapenv:Envelope>

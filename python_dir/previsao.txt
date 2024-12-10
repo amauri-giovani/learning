@@ -1,0 +1,11 @@
+000,1 _ HAL9000          _ WF003.003.003.003-B _ Harmonico _ Bancada             
+056,8 _ HAL9000          _ WF192.168.000.020-A _ Condensação _ Teste               
+063,7 _ HAL9000          _ WF192.168.000.020-8 _ Temp.Ambte  _ Teste               
+064,7 _ HAL9000          _ WF192.168.000.005-1 _ Eixo X Lubr _ Bancada             
+066,1 _ HAL9000          _ WF192.168.000.005-3 _ Eixo Z RMS  _ Bancada             
+070,1 _ HAL9000          _ WF192.168.000.020-9 _ TempOrvalho _ Teste               
+072,3 _ HAL9000          _ WF192.168.000.005-2 _ Eixo Y RMS  _ Bancada             
+365,0 _ Email            _ WF001.001.001.001-B _ Harmonico _ Externo             
+365,0 _ HAL9000          _ WF192.168.000.020-7 _ Humidade    _ Teste               
+365,1 _ HAL9000          _ WF192.168.000.005-0 _ Temperatura _ Bancada             
+366,0 _ Email            _ WF002.002.002.002-B _ Temperatura _ Interno             

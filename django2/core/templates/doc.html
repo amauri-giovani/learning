@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentação</title>
+</head>
+<body>
+{% for c in curso %}
+    <embed src="{{ c.doc }}" width="1000" height="1000" type='application/pdf'>
+{% endfor %}
+</body>
+</html>

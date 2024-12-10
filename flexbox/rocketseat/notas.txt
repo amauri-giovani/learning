@@ -1,0 +1,51 @@
+FLEXBOX
+=======
+
+
+CSS
+===
+
+display: flex;  // flexibiliza alinhamento dos itens
+flex-direction: row;  // alinha itens na linha
+flex-direction: row-reverse; // mesma linha porém sentido contrário (à direita)
+flex-direction: column;  // alinha itens na coluna
+flex-direction: column-reverse; // mesma coluna porém sentido contrário (de baixo para cima)
+
+align-items: ;  // alinha os itens verticalmente dependendo e o contrário do sentido do 
+                   flex-direction. Se for row, alinhará verticalmente e se for column alinhará horizontalmente.
+justify-content: ;  // alinha os itens horizontalmente dependendo e no mesmo sentido do 
+                       flex-direction. Se for row, alinhará horizontalmente e se for column alinhará verticalmente.
+
+align-items: flex-start;  // alinha os itens no início da linha ou coluna
+justify-content: flex-start;  // alinha os itens no início da linha ou coluna
+
+align-items: center;  // alinha os itens no centro da linha ou coluna
+justify-content: center;  // alinha os itens no centro da linha ou coluna
+
+align-items: flex-end;  // alinha os itens no final da linha ou coluna
+justify-content: flex-end;  // alinha os itens no final da linha ou coluna
+
+justify-content: space-between; // separa os itens com espaço somente entre eles
+justify-content: space-around; // separa os itens com espaço entre eles mas também no início e fim  
+                                  da linha ou coluna
+
+
+flex-grow: 1; // os componentes ocuparão toda a largura disponível em tela, aumentando o tamanho 
+                 deles se necessário
+flex-grow: 0; // desabilita essa função
+flex-shrink: 1; // os componentes ocuparão toda a largura disponível em tela, reduzindo o tamanho 
+                   deles se necessário
+flex-shrink: 0; // desabilita essa função
+flex: 1 0; // é a soma de flex-grow e flex-shrink. Nesse exemplo grow=1 e shrink=0, aumentando e 
+              não espremendo os itens se a tela for pequena criando uma barra de rolagem. Normalmente coloca-se somente flex: 1;
+flex: 1 0 auto;  // auto: flexbases define qual tamanho padrão do elemento antes dele aumentar ou 
+                    diminuir
+
+flex-wrap: wrap;  // mantém o tamanho dos elementos e caso não caibam em tela, quebrará a linha. 
+                     Usar sem flex: 1;
+flex-wrap: wrap-reverse;  // o mesmo que acima porém reversamente
+
+align-content: center;  // alinhará os elementos quando estiverem com quebra de linha, flex-wrap. 
+                           Temos acesso a todos os tipos de alinhamento do justify-content.
+
+order: 1; // ordena os elementos de acordo com o número de ordem

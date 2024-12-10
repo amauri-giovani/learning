@@ -1,0 +1,32 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Curso</title>
+    {% bootstrap_css %}
+</head>
+<body>
+<br>
+<div class="container">
+    <h1>Cadastrar Cursos</h1>
+    <br>
+    <h2>Para cadastrar um curso realize o login.</h2>
+    {% buttons %}
+    <a href="{% url 'index' %}">
+        <button type="submit" class="btn btn-primary">Retornar</button>
+    </a>
+    <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">
+        <button type="submit" class="btn btn-primary">Login</button>
+    </a>
+    <br><br><br>
+    <div>
+        <h3>Não possui login?</h3>
+        <a href="{% url 'contato' %}">
+            <button type="submit" class="btn btn-primary">Preencher Formulário</button>
+        </a>
+        <p>Dentro de 24h encaminharemos seu usuário e senha.</p>
+        {% endbuttons %}
+    </div>
+
+</html>

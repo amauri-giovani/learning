@@ -1,0 +1,32 @@
+_soapheaders={
+  "Security": {
+    "UsernameToken": {
+      "Username": "0470",
+      "Password": "B2BGWS21",
+      "Organization": "AAP",
+      "Domain": "G3"
+    }
+  },
+
+"MessageHeader": {
+  "From": {
+    "PartyId": {}
+  },
+  "To": {
+    "PartyId": {}
+  },
+  "CPAId": "G3",
+  "ConversationId": "ECOMPONENT",
+  "Service": "SessionCreateRQ",
+  "Action": "SessionCreateRQ",
+  "MessageData": {
+    "MessageId": "teste@e-component.com",
+    "Timestamp": "2020-01-01T00:00:00Z"
+  }
+},
+
+POS={
+"Source": {
+"PseudoCityCode": "HDQ"
+}
+}

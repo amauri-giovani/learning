@@ -1,0 +1,40 @@
+df['Data'].dt.day
+df['Data'].dt.month
+df['Data'].dt.year
+df['Data'].dt.week
+df['Data'].dt.weekday
+df['Data'].dt.day_name()
+df['Data'].dt.dayofyear
+
+dias_ptbr = {
+    'Sunday': 'Domingo',
+    'Monday': 'Segunda-feira',
+    'Tuesday': 'Terça-feira',
+    'Wednesday': 'Quarta-feira',
+    'Thursday': 'Quinta-feira',
+    'Friday': 'Sexta-feira',
+    'Saturday': 'Sábado'
+}
+df['Data'].dt.day_name().replace(dias_ptbr)
+
+meses_ptbr = {
+    'January': 'Janeiro',
+    'February': 'Fevereiro',
+    'March': 'Março',
+    'April': 'Abril',
+    'May': 'Maio',
+    'June': 'Junho',
+    'July': 'Julho',
+    'August': 'Agosto',
+    'September': 'Setembro',
+    'October': 'Outubro',
+    'November': 'Novembro',
+    'December': 'Dezembro'
+}
+df['Data'].dt.month_name().replace(meses_ptbr)
+
+s = pd.Series(pd.to_datetime('today’))
+s.dt.round(freq='s')    arredonda para segundo
+s.dt.round(freq='D')
+s.dt.ceil(freq='D')
+s.dt.floor(freq='D')

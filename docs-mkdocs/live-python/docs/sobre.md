@@ -1,0 +1,11 @@
+# Sobre
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero isti, inquam, permitto. Duo Reges: constructio interrete. Hic nihil fuit, quod quaereremus. Quod si ita est, sequitur id ipsum, quod te velle video, omnes semper beatos esse sapientes. Qua tu etiam inprudens utebare non numquam. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. 
+
+Neminem videbis ita laudatum, ut artifex callidus comparandarum voluptatum diceretur. Vitae autem degendae ratio maxime quidem illis placuit quieta. Consequens enim est et post oritur, ut dixi. Ita prorsus, inquam; Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. Animi enim quoque dolores percipiet omnibus partibus maiores quam corporis. 
+
+Quid ergo dubitamus, quin, si non dolere voluptas sit summa, non esse in voluptate dolor sit maximus? Nulla profecto est, quin suam vim retineat a primo ad extremum. Quam tu ponis in verbis, ego positam in re putabam. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Semper enim ex eo, quod maximas partes continet latissimeque funditur, tota res appellatur. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi; Quis, quaeso, illum negat et bonum virum et comem et humanum fuisse? Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. 
+
+Non autem hoc: igitur ne illud quidem. Theophrasti igitur, inquit, tibi liber ille placet de beata vita? Ab hoc autem quaedam non melius quam veteres, quaedam omnino relicta. Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. Ita graviter et severe voluptatem secrevit a bono. 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Itaque a sapientia praecipitur se ipsam, si usus sit, sapiens ut relinquat. Alterum significari idem, ut si diceretur, officia media omnia aut pleraque servantem vivere. Vitae autem degendae ratio maxime quidem illis placuit quieta. Hoc loco tenere se Triarius non potuit. Duo Reges: constructio interrete. Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit. 
+

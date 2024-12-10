@@ -1,0 +1,157 @@
+No VSCode, instale a extensão Live Server para fazer o reload automático na página
+
+
+RESET CSS
+=========
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+box-sizing: border-box;  // para que o elemento permaneça com seu tamanho e o padding não aumente 
+                            o tamanho da width/height. Um elemento com width:300px e padding:20px permanecerá com width:300px e o padding fará com que ele tenha 260px internamente.
+
+// essas duas linhas abaixo são para que as fontes sejam mais suavizadas
+text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
+
+!important sobrescreve a configuração anterior
+
+
+AT-RULES (@)
+============
+
+@import       incluir um CSS externo
+@media        regras condicionais para dispositivo
+@font-face    fontes externas
+@keyframes    animation
+
+
+
+VENDOR PREFIXES
+===============
+
+-webkit....
+
+Pode ser consultado quando usar em:
+https://caniuse.com/
+
+
+
+ADICIONANDO IMAGENS
+===================
+
+Para criar um link na imagem:
+<a><img ...></a>
+
+Pode-se utilizar imagens randômicas em:
+https://source.unsplash.com/random
+
+<img src="https://source.unsplash.com/random" alt="" title="Tíitulo da imagem">
+
+title="Título da imagem"     Para mostrar um comentário quando o mouse estiver por cima da imagem
+
+Títulos visíveis:
+
+<a href="https://google.com">
+  <figure>
+    <img src="https://source.unsplash.com/random" alt="">
+    <figcaption>Colocar título na imagem</figcaption>
+  </figure>
+</a>
+
+O <figcaption> será um texto ligado a imagem.
+
+
+ADICIONANDO VÍDEOS
+==================
+
+<video controls autoplay preload="auto" loop muted poster="./icon.png">
+  <source src="https://www.youtube.com/watch?v=nhW70H9H4gU"
+  type="video/mp4">
+  <p>Este navegador não suporta esse vídeo</p>
+</video>
+
+controls              Habilita os controles do vídeo
+preload="auto"        Começa a tocar o vídeo quando a página for carregada
+preload="none"        Para não carregar nada antes de pressionar o play
+preload="metadata"    Carrega apenas o básico, vídeo bem curto como preview
+loop                  Repetirá o vídeo quando acabar
+muted                 Inicia o vídeo com som desabilitado
+poster="./icon.png"   A imagem para o vídeo antes de iniciá-lo
+
+
+
+ADICIONANDO ÁUDIOS
+==================
+
+<audio controls autoplay muted>
+  <source src="/usr/share/music/bensound-sunny.mp3"
+  type="video/mp4">
+  <p>Este navegador não suporta esse áudio</p>
+</audio>
+
+Permite quase todas as funcionalidades do vídeo.
+
+
+
+ADICIONANDO IFRAMES
+===================
+
+
+VÍDEOS
+======
+
+Em um vídeo do Youtube, clicar em compartilhar, incorporar e copiar o <iframe>
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/BwwOu29K6mE" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+frameborder="0"     Borda do vídeo
+allowfullscreen     Permite visualização em tela cheia
+allow=...           Permissões do vídeo
+  gyroscope           Em casos de girar o celular para horizontal
+  picture-in-picture  Permite um mini vídeo no canto da tela
+  
+
+MAPAS
+=====
+
+No Google Maps, clicar no menu, compartilhar, incorporar e copiar o iframe:
+
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14578.117173341047!2d-46.41047845!3d-24.0123935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1612537322108!5m2!1spt-BR!2sbr" 
+  width="600" 
+  height="450" 
+  frameborder="0" 
+  style="border:0;" 
+  allowfullscreen="" 
+  aria-hidden="false" 
+  tabindex="0">
+</iframe>
+
+aria-hidden="false"     Para acessibilidade
+
+
+OBS: TOMAR CUIDADO COM SEGURANÇA E LICENÇA DOS VÍDEOS
+
+
+PROPRIEDADES
+============
+
+Podemos dar estilo a um elemento através do seu atributo.
+<h1 title="Título">Curso</h1>
+
+No CSS:
+[title] {
+  color: orange;
+}
+
